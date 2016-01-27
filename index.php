@@ -7,13 +7,13 @@ if(!isset($_SESSION['userlevel'])) {
 
 switch ($_SESSION) {
 	case 0 :
-		include ('login.php');
+		include ('includes/login.php');
 		break;
 	case 1 :
-		include ('userhome.php');
+		include ('includes/userhome.php');
 		break;
 	case 2 :
-		include ('adminhome.php');
+		include ('includes/adminhome.php');
 		break;
 	case 3 :
 		session_destroy();
