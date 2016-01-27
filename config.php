@@ -16,5 +16,6 @@ $ts3_pass = 'pa$$w0rd';
 $jts3_host = '127.0.0.1';
 $jts3_port = 5873;
 $jts3_pass = 'Pa$$w0rd';
+$jts3_id = 1;
 
 ?>
