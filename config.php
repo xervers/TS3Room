@@ -1,9 +1,16 @@
 <?php
+// Should we display PHP/MySQL errors?
+$displayErrors = 0;
+
+// What template should we use? (template folder)
+$template = 'default';
+
 // MySQL Server Access Information
 $mysql_host = '127.0.0.1';
 $mysql_port = 3385;
 $mysql_user = 'mysql_user';
 $mysql_pass = 'mysql_pass';
+$mysql_data = 'mysql_database';
 
 // Teamspeak 3 Server Access Information
 $ts3_host = '127.0.0.1';

@@ -1,11 +1,19 @@
 <?php
-// Start or restart the session.
-session_start();
-if(!isset($_SESSION['userlevel'])) {
-	$_SESSION['userlevel'] = 0;
+require ('config.php');
+include ('includes/smarty.php');
+
+if ($displayErrors == 1) {
+	error_reporting(-1);
+	ini_set('display_errors', 'On');
 }
 
-switch ($_SESSION) {
+// Start or restart the session.
+session_start();
+if(!isset($_SESSION['session'])) {
+	$_SESSION['session'] = 0;
+}
+
+switch ($_SESSION['session']) {
 	case 0 :
 		include ('includes/login.php');
 		break;
